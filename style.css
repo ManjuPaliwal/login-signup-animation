@@ -1,0 +1,92 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: slategrey;
+}
+.container{
+    width: 400px;
+    margin: auto;
+    padding: 10px;
+    position: absolute;
+    box-shadow: 0 0 6px 0px rgb(56, 54, 54);
+}
+label{
+    font-size:larger;
+    margin-left: 1.7rem;
+    line-height: 5rem;
+}
+input{
+    border: none;
+    padding: 6px 3px;
+    width: 200px;
+    text-align: center;
+    color: #212a39;
+}
+button{
+   display: block;
+margin: auto;
+width: 170px;
+padding: 10px 25px ;
+font-size: medium;
+font-weight: bold;
+cursor: pointer;
+border-color: #212a39;
+background-color: transparent;
+border-radius: 4px;
+}
+button:hover{
+    background-color:#adb2b9;
+    color: #212a39;
+    
+}
+p{
+    text-align: center;
+    font-size: small;
+    
+}
+p span{
+    font-weight: bold;
+    cursor: pointer;
+}
+#signUpForm{
+   background-color:#90b4af;
+   color: #28413d;
+    z-index: 1;
+}
+#logInForm{
+    background-color: #d2d7df;
+    /* background-color:#212a39; */
+    color: #212a39;
+    z-index: 2;
+}
+.slide-left{
+    animation-name:moveleft;
+   animation-delay:ease-in-out ;
+   animation-duration: 3s;
+    position: absolute;
+    rotate: 4deg;
+}
+
+
+
+
+@keyframes moveleft{
+0%{
+    right: 0px;
+    left: 0;
+}
+50%{
+    right: 140rem;
+}
+100%{
+    left:500px;
+
+}
+}
